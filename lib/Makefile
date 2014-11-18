@@ -1,4 +1,5 @@
-site=https://repo.varnish-cache.org/source
+#site=https://repo.varnish-cache.org/source
+site=http://alain.petignat.ch
 version=3.0.6
 package=varnish-$(version).tar.gz
 workdir=$(CACHE_DIR)/varnish-$(version)
