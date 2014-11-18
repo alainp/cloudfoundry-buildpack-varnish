@@ -1,5 +1,5 @@
-site=http://err.no/tmp
-version=3.0.3~pre20120523
+site=https://repo.varnish-cache.org/source
+version=3.0.6
 package=varnish-$(version).tar.gz
 workdir=$(CACHE_DIR)/varnish-$(version)
 
@@ -35,5 +35,5 @@ compile: | configure
 install: | compile
 	make -C $(workdir) install
 
-libpcre: 
-	make -f Makefile.pcre install BUILD_DIR=$(BUILD_DIR) CACHE_DIR=$(CACHE_DIR)
+libpcre:
+#	make -f Makefile.pcre install BUILD_DIR=$(BUILD_DIR) CACHE_DIR=$(CACHE_DIR)
